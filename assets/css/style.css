@@ -1309,8 +1309,8 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #FFF3CF;
-  color: #004747;
+  background: #004747;
+  color: #FFF3CF;
   float: left;
   width: 44px;
   height: 44px;
@@ -1401,7 +1401,7 @@ section {
 
 .contact .email-form input:focus,
 .contact .email-form textarea:focus {
-  border-color: #FFF3CF;
+  border-color: #004747;
 }
 
 .contact .email-form input {
@@ -1413,16 +1413,17 @@ section {
 }
 
 .contact .email-form button[type=submit] {
-  background: #FFF3CF;
+  background: #004747;
   border: 0;
-  padding: 10px 24px;
-  color: #fff;
+  padding: 10px 24px;  
+  color: #FFF3CF; 
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .email-form button[type=submit]:hover {
-  background: #FFF3CF;
+  background: #004747;
+  color: #FFF3CF;
 }
 
 @keyframes animate-loading {
