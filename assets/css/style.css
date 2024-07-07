@@ -793,7 +793,12 @@ section {
   margin-bottom: 10px;
 }
 
+@media (max-width: 767.98px) {
+  .planos .planos-img {
+    max-width: 90%;
+  }
 
+}
 
 .botao-whatsapp {
   position: fixed;
