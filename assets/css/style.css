@@ -600,6 +600,23 @@ section {
   border-radius: 10px;
 }
 
+.quero-consulta {
+  display: inline-block;
+  background-color: #0f9c0f;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.quero-consulta:hover {
+  background-color: #0c7d0c;
+}
+
+⚡ Exp
+
 .especialidade-img {
   max-width: 200px;
   height: auto;
@@ -625,6 +642,11 @@ section {
   .sobre .img-fluid {
     margin-left: 0;
     max-width: 0%;
+  }
+  .sobre .quero-consulta {
+    width: 80%; /* O botão ocupará 80% da largura da tela */
+    font-size: 20px; /* Aumenta o tamanho do texto */
+    padding: 18px 0; /* Mais espaço interno */
   }
 }
 
@@ -898,6 +920,12 @@ section {
   align-items: center;
 }
 
+#bonus .quero-consulta {
+  display: block;
+  margin: 20px auto;
+  width: 350px; 
+}
+
 @media (max-width: 767.98px) {
   .bonus .content {
     order: 1 !important; 
@@ -905,6 +933,10 @@ section {
 
   .bonus .image-grid {
     order: 2 !important; 
+  }
+
+  #bonus .quero-consulta {
+    width: 300px; 
   }
 }
 
