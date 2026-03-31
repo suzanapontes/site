@@ -538,8 +538,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .sobre {
-  position: relative; 
-  padding-top: 50px; 
+  position: relative;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -573,7 +573,7 @@ section {
 
 .sobre .img-fluid {
   max-width: 63%;
-   height: auto;
+  height: auto;
   margin-left: 110px;
 }
 
@@ -581,15 +581,22 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
- }
+}
 
- .sobre .quero-consulta {
+@media (max-width: 768px) {
+  .sobre .especialidades {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.sobre .quero-consulta {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  position: absolute; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 10px;
 }
 
@@ -615,14 +622,6 @@ section {
   background-color: #0c7d0c;
 }
 
-⚡ Exp
-
-.especialidade-img {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
 
 @media (max-width: 992px) {
   .sobre .row {
@@ -643,10 +642,14 @@ section {
     margin-left: 0;
     max-width: 0%;
   }
+
   .sobre .quero-consulta {
-    width: 80%; /* O botão ocupará 80% da largura da tela */
-    font-size: 20px; /* Aumenta o tamanho do texto */
-    padding: 18px 0; /* Mais espaço interno */
+    width: 80%;
+    /* O botão ocupará 80% da largura da tela */
+    font-size: 20px;
+    /* Aumenta o tamanho do texto */
+    padding: 18px 0;
+    /* Mais espaço interno */
   }
 }
 
@@ -700,10 +703,10 @@ section {
 
 .local-atendimento .swiper-slide img {
   width: 300px;
-  height: 300px; 
-  object-fit: cover; 
+  height: 300px;
+  object-fit: cover;
   transition: 0.3s;
-  
+
 }
 
 .local-atendimento .swiper-slide img:hover {
@@ -811,7 +814,7 @@ section {
 }
 
 .planos .icon-box {
-  
+
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
@@ -819,7 +822,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none; 
+  text-decoration: none;
   color: inherit;
 }
 
@@ -923,28 +926,43 @@ section {
 #bonus .quero-consulta {
   display: block;
   margin: 20px auto;
-  width: 350px; 
+  width: 350px;
 }
 
 @media (max-width: 767.98px) {
   .bonus .content {
-    order: 1 !important; 
+    order: 1 !important;
   }
 
   .bonus .image-grid {
-    order: 2 !important; 
+    order: 2 !important;
   }
 
   #bonus .quero-consulta {
-    width: 300px; 
+    width: 300px;
   }
 }
 
 .especialidade-img {
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 10px;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .especialidade-img {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .especialidade-img {
+    max-width: 95%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1475,8 +1493,8 @@ section {
 .contact .email-form button[type=submit] {
   background: #004747;
   border: 0;
-  padding: 10px 24px;  
-  color: #FFF3CF; 
+  padding: 10px 24px;
+  color: #FFF3CF;
   transition: 0.4s;
   border-radius: 4px;
 }
